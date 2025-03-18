@@ -44,10 +44,10 @@ class Program
 
         // Start HTTP server
         HttpListener listener = new HttpListener();
-        listener.Prefixes.Add("http://*:8080/"); // Listen on port 8080
+        listener.Prefixes.Add("http://*:80/"); // Listen on port 8080
         listener.Start();
 
-        logger.LogInformation("Server started on http://localhost:8080");
+        logger.LogInformation("Server started on port 80");
 
         while (true)
         {

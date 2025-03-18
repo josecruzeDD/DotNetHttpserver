@@ -1,0 +1,27 @@
+name: Build and Push to GHCR
+
+on:
+  push:
+    branches:
+      - main  # Runs when you push to main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build and Push Docker Image
+        run: |
+          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/dotnet-http-server:latest
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME

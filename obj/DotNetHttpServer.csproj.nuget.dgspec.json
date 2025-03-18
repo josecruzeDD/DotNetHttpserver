@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jose.cruze/Documents/SandBox/DotNetHttpServer/DotNetHttpServer.csproj": {}
+  },
+  "projects": {
+    "/Users/jose.cruze/Documents/SandBox/DotNetHttpServer/DotNetHttpServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jose.cruze/Documents/SandBox/DotNetHttpServer/DotNetHttpServer.csproj",
+        "projectName": "DotNetHttpServer",
+        "projectPath": "/Users/jose.cruze/Documents/SandBox/DotNetHttpServer/DotNetHttpServer.csproj",
+        "packagesPath": "/Users/jose.cruze/.nuget/packages/",
+        "outputPath": "/Users/jose.cruze/Documents/SandBox/DotNetHttpServer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jose.cruze/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.11.2, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.11.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.11.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
